@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*eliminar los heights y usar margenes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*logo*/
+.encabezado img {
+    width: 100px;
+    height: 100px;
+    order: 0;   
+}
+.lista {    
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    gap: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px;
+    order: 1;
+}
+.lista li a {
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    color: darkgoldenrod;
+}
+
+/*hero section*/
+.hero {
+    height: 300px;
+    background-image: url("../img/banner1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    color: darkgoldenrod;
+    font-family: "DM Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 240;
+
+}
+.hero p {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 30px;
+    color: white;
+    text-shadow: 1px -3px 25px rgba(0,0,0,0.76);
+}
+h2 {
+    color: darkgoldenrod;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+
+/*pedidos personalizados*/
+.pedidos_personalizados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+.content p {
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
+    color: darkgoldenrod;
+    font-size:large;
+    padding-top: 30px;
+    margin: 40px;
+}
+.content a {
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.image {
+    flex: 1; max-width: 50%;
+    text-align: right; 
+}
+.pedidos_personalizados img {
+    max-width: 100%; height: auto;
+}
+.pedidos_personalizados a {
+    display: inline-block; margin-top: 20px
+}
+
+/*defini tu espacio*/
+.categorias .tarjetas {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+.tarjetas div{
+    border: 1px solid gray;
+    width: 351px;
+    height: 390px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.tarjetas div h3{
+    font-family: "DM Sans", sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tarjetas div a{
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tarjetas div img{
+    width: 300px;
+    height: 300px;
+    
+}
+
+/**footer a corregir**/
+footer div{
+background-color: blanchedalmond;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+}
+
+footer h4{
+    color: darkgoldenrod;
+    font-family: "DM Sans", sans-serif;
+    font-size: 23px;
+    font-weight: 200;
+    padding: 8px;
+}
+
+.quienes_somos{
+height: 1200px;
+background-image: url("../img/fondo_pp.jpeg");
+background-repeat: no-repeat;
+background-size:cover;
+margin-bottom: 20px;
+background-attachment:fixed;
+}
+.quienes_somos p{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+}
+
