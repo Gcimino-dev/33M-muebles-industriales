@@ -224,6 +224,7 @@ footer h4 {
 .quienes_somos p {
     text-align: center;
     font-family: "DM Sans", sans-serif;
+    max-width: 100%;
     font-size: 25px;
     font-weight: 500;
     margin: 10px;
