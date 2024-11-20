@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-/*eliminar los heights y usar margenes*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*LOGOTIPO*/
+.encabezado img {
+    width: 100px;
+    height: 100px;
+    order: 0;   
+}
+
+/*MENÚ INICIAL*/
 .encabezado {
     position: sticky;
     top: 0;
@@ -14,15 +22,9 @@
     align-items: center;
     flex-direction: column;
 }
-/*logo*/
-.encabezado img {
-    width: 100px;
-    height: 100px;
-    order: 0;   
-}
 .lista {    
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Usa flexbox para alinear los elementos */
+    list-style: none;
+    display: flex;
     gap: 20px;
     justify-content: space-between;
     align-items: baseline;
@@ -37,35 +39,64 @@
     color: darkgoldenrod;
 }
 
-/*hero section*/
+/*HERO SECTION*/
 .hero {
     height: 300px;
-    background-image: url("../img/banner1.jpeg");
+    background-image: url("../img/logo3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px;
-    background-attachment:fixed;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .hero h1 {
-    color: darkgoldenrod;
+    color: rgb(51, 38, 4);
     font-family: "DM Sans", sans-serif;
     font-size: 60px;
     font-weight: 240;
-
+    margin: 0;
+    text-shadow: 0px 0px 2px rgba(0,0,0,1);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%
 }
 .hero p {
-    text-align: center;
+    text-align: justify;
     font-family: "DM Sans", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
-    padding-top: 30px;
-    color: white;
-    text-shadow: 1px -3px 25px rgba(0,0,0,0.76);
+    font-size: 26px;;
+    font-weight: 350;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(51, 38, 4);
+    text-shadow: 0px 0px 2px rgba(0,0,0,1);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
 }
+@media (max-width: 925px) {
+.hero {
+    height: auto;
+    background-attachment: scroll;
+    padding: 10px;
+} 
+.hero h1 {
+    font-size: 40px;
+    padding: 5px;
+}
+.hero p { 
+    font-size: 20px;
+    padding: 10px;
+}}
+
+/*TITULOS SECUNDARIOS*/
+
 h2 {
     color: darkgoldenrod;
     font-family: "DM Sans", sans-serif;
@@ -75,11 +106,13 @@ h2 {
     justify-content: center;
 }
 
-/*pedidos personalizados*/
+/*PEDIDOS PERSONALIZADOS*/
+
 .pedidos_personalizados {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 20px;
 }
 .content {
     display: flex;
@@ -88,84 +121,90 @@ h2 {
     flex: 1;
     max-width: 50%;
     text-align: center;
+    margin-right: 20px;
+}
+.content h2 {
+    margin-bottom: 20px;
 }
 .content p {
     text-align: justify;
     font-family: "DM Sans", sans-serif;
     color: darkgoldenrod;
-    font-size:large;
+    font-size: large;
+    font-weight: 500;
     padding-top: 30px;
     margin: 40px;
 }
-.content a {
-    text-decoration: none;
-    border: 1px solid black;
-    text-align: center;
-    font-family: "DM Sans", sans-serif;
-    font-size: medium;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 20px;
-    display: inline-block;
-}
 .image {
-    flex: 1; max-width: 50%;
-    text-align: right; 
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+    margin-left: 20px;
 }
 .pedidos_personalizados img {
-    max-width: 100%; height: auto;
-}
-.pedidos_personalizados a {
-    display: inline-block; margin-top: 20px
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 100%
 }
 
-/*defini tu espacio*/
-.categorias .tarjetas {
-display: flex;
-justify-content: space-around;
-align-items: center;
-flex-wrap: wrap;
+@media (max-width: 1000px) {
+.pedidos_personalizados { 
+    grid-template-columns: 1fr;
+    text-align: center;
 }
-.tarjetas div{
+.image {
+    display: none;
+}
+.content {
+    max-width: 100%;
+    margin-right: 0;
+}
+.content p {
+    margin: 20px;
+}}
+
+/*DEFINÍ TU ESPACIO*/
+.categorias .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tarjetas div {
     border: 1px solid gray;
     width: 351px;
     height: 390px;
     text-align: center;
     margin: 15px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-.tarjetas div h3{
+.tarjetas div h3 {
     font-family: "DM Sans", sans-serif;
     font-size: large;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.tarjetas div a{
-    text-decoration: none;
-    border: 1px solid black;
-    text-align: center;
-    font-family: "DM Sans", sans-serif;
-    font-size: medium;
+.tarjetas div a {
     padding-left: 5px;
     padding-right: 5px;
+    margin-top: 10px;
 }
-.tarjetas div img{
+.tarjetas div img {
     width: 300px;
-    height: 300px;
-    
+    height: 300px;    
 }
 
-/**footer a corregir**/
-footer div{
-background-color: blanchedalmond;
-display: flex;
-justify-content:space-evenly;
-align-items: center;
+footer div {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
-footer h4{
+footer h4 {
     color: darkgoldenrod;
     font-family: "DM Sans", sans-serif;
     font-size: 23px;
@@ -173,21 +212,116 @@ footer h4{
     padding: 8px;
 }
 
-.quienes_somos{
-height: 1200px;
-background-image: url("../img/fondo_pp.jpeg");
-background-repeat: no-repeat;
-background-size:cover;
-margin-bottom: 20px;
-background-attachment:fixed;
+/*QUIENES SOMOS*/
+
+.quienes_somos {
+    height: 1200px;
+    background-image: url("../img/fondo_pp.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 20px;
 }
-.quienes_somos p{
+.quienes_somos p {
     text-align: center;
     font-family: "DM Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
     margin: 10px;
+    padding: 20px;
+    color: rgb(243, 177, 11);
+    text-shadow: 0px 0px 12px rgba(255,255,255,0.72);
+}
+
+/*PRODUCTOS*/
+
+.menu_productos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu_productos div {
+    border: 1px solid gray;
+    width: 351px;
+    height: 390px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.menu_productos div h3 {
+    font-family: "DM Sans", sans-serif;
+    color: darkgoldenrod;
+    font-size: large;
+    text-shadow: 0px 0px 12px rgba(223, 223, 9, 0.72);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.menu_productos div img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3px;    
+}
+
+/*CONTACTOS*/
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: "DM Sans", sans-serif;
+}
+.contact-form h1 {
+    text-align: center;
+    color: darkgoldenrod;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="number"] {
     padding: 10px;
-    color: aliceblue;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio-group label {
+    margin-right: 10px;
+} .form-group.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group.buttons input[type="submit"], .form-group.buttons input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+}
+.form-group.buttons input[type="reset"] {
+    background-color: #bbb; 
+}
+.form-group.buttons input[type="submit"]:hover, .form-group.buttons input[type="reset"]:hover {
+    background-color: #555;
 }
 
