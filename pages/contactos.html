@@ -19,43 +19,43 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+    <main class="contact-form">
         <h1>Dejanos tu contacto para comunicarnos</h1>
         <form action="">
-            <div>
-                <label for="">Nombre y Apellido</label>
-                <input type="text" placeholder="Escribí tu Nombre completo">
+            <div class="form-group">
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" id="name" placeholder="Escribí tu Nombre completo">
             </div>
-            <div>
-                <label for="">Email</label>
-                <input type="email" placeholder="Escribí tu correo">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Escribí tu correo">
             </div>
-            <div>
-                <label for="">Número</label>
-                <input type="number" placeholder="Con código de área sin 0">
+            <div class="form-group">
+                <label for="number">Número</label>
+                <input type="number" id="number" placeholder="Con código de área sin 0">
             </div>
-            <div>
-                <label for="">Cliente:</label>
-                <div>
-                    <label for="">Persona</label>
-                    <input type="radio">
-                    <label for="">Empresa</label>
-                    <input type="radio">
-                </div>
-            <input type="submit" value="Enviar contacto">
-            <input type="reset" value="Limpiar formulario">
+            <div class="form-group">
+                <label>Cliente:</label>
+            <div class="radio-group">
+                <label for="persona">Persona</label>
+                <input type="radio" id="persona" name="cliente">
+                <label for="empresa">Empresa</label>
+                <input type="radio" id="empresa" name="cliente">
+            </div>
+            </div>
+            <div class="form-group buttons">
+                <input type="submit" value="Enviar contacto">
+                <input type="reset" value="Limpiar formulario">
             </div>
         </form>
     </main>
-
     <footer> 
         <div>
             <h4>33M Muebles Industriales</h4>
-        <a href="" target="_blank" ></a><img src="../img/instagram.png" alt="instagram">
-        <a href="" target="_blank" ></a><img src="../img/sobre.png" alt="correo">
-        <a href="" target="_blank" ></a><img src="../img/telefono.png" alt="telefonos">
-        <a href="" target="_blank" ></a><img src="../img/domicilio.png" alt="Donde encontrarnos">
+        <a href="../pages/contactos.html"> <img src="../img/instagram.png" alt="instagram"> </a>
+        <a href="../pages/contactos.html"> <img src="../img/sobre.png" alt="correo"> </a>
+        <a href="../pages/contactos.html"> <img src="../img/telefono.png" alt="telefonos"> </a>
+        <a href="../pages/contactos.html"> <img src="../img/domicilio.png" alt="donde encontrarnos"> </a>
         </div>
     </footer>
 </body>
