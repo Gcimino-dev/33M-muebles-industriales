@@ -80,6 +80,8 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     max-width: 80%;
 }
+
+/*falta sumar las medias queris a sass*/
 @media (max-width: 925px) {
 .hero {
     height: auto;
@@ -148,6 +150,7 @@ h2 {
     height: 100%
 }
 
+/*falta agregar medias queris a sass*/
 @media (max-width: 1000px) {
 .pedidos_personalizados { 
     grid-template-columns: 1fr;

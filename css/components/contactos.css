@@ -1,0 +1,61 @@
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: "DM Sans", sans-serif;
+}
+.contact-form h1 {
+  text-align: center;
+  color: darkgoldenrod;
+}
+.contact-form .action .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contact-form .action .form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+.contact-form .action .form-group input [type=text], .contact-form .action .form-group input .form-group input[type=email], .contact-form .action .form-group input .form-group input[type=number] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.contact-form .action .form-group .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form .action .form-group .buttons input [type=submit], .contact-form .action .form-group .buttons input .form-group.buttons input[type=reset] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: darkgoldenrod;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+.contact-form .action .form-group .buttons input [type=submit] [type=reset], .contact-form .action .form-group .buttons input .form-group.buttons input[type=reset] [type=reset] {
+  background-color: #bbb;
+}
+.contact-form .action .form-group .buttons input [type=submit]:hover, .contact-form .action .form-group .buttons input .form-group.buttons input[type=reset]:hover {
+  background-color: #555;
+}
+.contact-form .action .form-group .radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form .action .form-group .radio-group label {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=contactos.css.map */

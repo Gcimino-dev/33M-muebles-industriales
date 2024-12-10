@@ -1,0 +1,29 @@
+.menu_productos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        border: 1px solid gray;
+        width: 351px;
+        height: 390px;
+        text-align: center;
+        margin: 20px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        h3{
+            font-family: "DM Sans", sans-serif;
+            color: darkgoldenrod;
+            font-size: large;
+            text-shadow: 0px 0px 12px rgba(223, 223, 9, 0.72);
+            margin-bottom: 10px;
+            margin-top: 10px;
+            img{
+                width: 300px;
+                height: 300px;
+                margin-bottom: 3px;  
+            }
+        }
+    }
+}

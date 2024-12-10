@@ -1,0 +1,46 @@
+@media (max-width: 925px) {
+    .hero {
+        height: auto;
+        background-attachment: scroll;
+        padding: 10px;
+    } 
+    .hero h1 {
+        font-size: 40px;
+        padding: 5px;
+    }
+    .hero p { 
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pedidos_personalizados { 
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .image {
+            display: none;
+    }
+    .content {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .content p {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 660px) { 
+    .quienes_somos { 
+        height: auto;
+        padding: 20px; 
+    } 
+    .quienes_somos p { 
+        font-size: 18px;
+        width: 100%;
+        top: auto;
+        left: auto;
+        transform: none; 
+    }
+}
